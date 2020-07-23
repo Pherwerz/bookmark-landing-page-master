@@ -55,7 +55,7 @@ class FAQs extends Component {
   };
 
   clicked = e => {
-    const id = parseInt(e.target.id);
+    // const id = parseInt(e.target.id);
   };
 
   render() {
