@@ -8,14 +8,25 @@
   &Item {
   }
 
-  &Link:link,
-  &Link:visited {
-    text-decoration: none;
-    color: var(--very-dark-blue);
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 1.6rem;
-    letter-spacing: 0.2rem;
+  &Link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 1.6rem;
+      letter-spacing: 0.2rem;
+    }
+
+    &dark:link,
+    &dark:visited {
+      color: var(--very-dark-blue);
+    }
+
+    &light:link,
+    &light:visited {
+      color: #ffffff;
+    }
   }
 
   &Link:hover,

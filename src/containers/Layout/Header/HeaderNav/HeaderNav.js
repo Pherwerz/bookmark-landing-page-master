@@ -9,7 +9,7 @@ const HeaderNav = () => (
   <Container>
     <div className={classes.HeaderNav}>
       <Logo type="dark" />
-      <List />
+      <List type="dark" />
       <Button name="Login" type="orange" />
     </div>
   </Container>
