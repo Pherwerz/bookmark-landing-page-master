@@ -1,0 +1,57 @@
+.FAQs {
+  margin-bottom: 10rem;
+  text-align: center;
+
+  &List {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    border-top: 1px solid var(--grayish-blue);
+  }
+
+  &Item {
+    border-bottom: 1px solid var(--grayish-blue);
+    padding-bottom: 2rem;
+  }
+
+  &Quest {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 1.5rem 0;
+    background-color: #ffffff;
+    border: none;
+
+    & h3 {
+      font-size: 1.8rem;
+      font-family: inherit;
+      color: var(--very-dark-blue);
+    }
+
+    & svg {
+      fill: var(--soft-blue);
+      height: 3rem;
+      width: 3rem;
+    }
+
+    &:hover h3 {
+      color: var(--soft-red);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &Ans {
+    text-align: left;
+    padding: 2rem 0;
+
+    & p {
+      color: var(--grayish-blue);
+      line-height: 2.5;
+    }
+  }
+}

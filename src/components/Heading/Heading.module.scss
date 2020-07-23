@@ -1,0 +1,18 @@
+.Heading {
+  text-align: center;
+  margin-bottom: 5rem;
+
+  & h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    color: var(--very-dark-blue);
+    margin-bottom: 2rem;
+  }
+
+  & p {
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--grayish-blue);
+  }
+}

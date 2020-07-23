@@ -1,0 +1,48 @@
+.Download {
+  margin-bottom: 10rem;
+
+  &List {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 45rem;
+  }
+
+  &Item {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    height: 35rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    & h3 {
+      color: var(--very-dark-blue);
+      font-weight: 500;
+    }
+
+    & p {
+      color: var(--grayish-blue);
+    }
+
+    & div {
+      padding: 2rem;
+      border-top: 0.5rem dotted var(--grayish-blue);
+    }
+
+    &:nth-child(2) {
+      align-self: center;
+    }
+
+    &:nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.Button {
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &orange {
+    background-color: var(--soft-red);
+    border: 2px solid var(--soft-red);
+    color: #fff;
+
+    &:hover {
+      color: var(--soft-red);
+      background-color: #fff;
+    }
+  }
+
+  &blue {
+    background-color: var(--soft-blue);
+    border: 2px solid var(--soft-blue);
+    color: #fff;
+
+    &:hover {
+      color: var(--soft-blue);
+      background-color: #fff;
+    }
+  }
+
+  &white {
+    background-color: #fcfcfc;
+    border: 2px solid #fcfcfc;
+    color: var(--very-dark-blue);
+
+    &:hover {
+      border: 2px solid var(--very-dark-blue);
+      background-color: #fff;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

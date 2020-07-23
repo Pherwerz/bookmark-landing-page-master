@@ -1,0 +1,36 @@
+.Feature {
+  margin-bottom: 15rem;
+
+  &TabBtn {
+    display: flex;
+    margin: 0 auto;
+    width: 65%;
+    margin-bottom: 5rem;
+  }
+
+  &Btn {
+    flex: 1;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid var(--grayish-blue);
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--grayish-blue);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--soft-red);
+    }
+
+    &.active {
+      border-bottom: 2px solid var(--soft-red);
+      color: var(--very-dark-blue);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

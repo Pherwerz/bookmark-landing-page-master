@@ -1,0 +1,56 @@
+.HeaderView {
+  display: flex;
+  height: 57rem;
+  margin-bottom: 10rem;
+
+  & > * {
+    flex: 1;
+  }
+
+  &left {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &Item {
+    flex: 0 0 80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    & h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      color: var(--very-dark-blue);
+      margin-bottom: 4rem;
+    }
+
+    & p {
+      width: 90%;
+      margin-bottom: 4rem;
+      color: var(--grayish-blue);
+    }
+
+    & div button:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &right {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &bg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 65%;
+      width: 80%;
+      background-color: var(--soft-blue);
+      z-index: -1;
+      border-top-left-radius: 35%;
+      border-bottom-left-radius: 35%;
+    }
+  }
+}
