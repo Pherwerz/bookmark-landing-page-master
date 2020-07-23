@@ -26,12 +26,12 @@
 
     & h3 {
       font-size: 1.8rem;
+      font-weight: 500;
       font-family: inherit;
       color: var(--very-dark-blue);
     }
 
     & svg {
-      fill: var(--soft-blue);
       height: 3rem;
       width: 3rem;
     }
@@ -48,6 +48,10 @@
   &Ans {
     text-align: left;
     padding: 2rem 0;
+
+    &hide {
+      display: none;
+    }
 
     & p {
       color: var(--grayish-blue);
