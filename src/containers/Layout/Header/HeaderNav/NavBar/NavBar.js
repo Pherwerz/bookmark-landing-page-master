@@ -4,7 +4,6 @@ import close from '../../../../../images/icon-close.svg';
 import Logo from '../../../../../components/Logo/Logo';
 import Container from '../../../../Container/Container';
 import Icons from '../../../../../components/Icons/Icons';
-import Button from '../../../../../components/Button/Button';
 
 const links = ['Features', 'Pricing', 'Contact'];
 
