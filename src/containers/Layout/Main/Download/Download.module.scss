@@ -24,7 +24,6 @@
   &Item {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
-    height: 35rem;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -89,6 +88,14 @@
 
       @include respond(phone) {
         padding: 4rem;
+      }
+    }
+
+    &:nth-child(1) {
+      align-self: flex-start;
+
+      @include respond(phone) {
+        align-self: center;
       }
     }
 
