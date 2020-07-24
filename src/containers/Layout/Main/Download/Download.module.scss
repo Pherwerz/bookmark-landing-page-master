@@ -80,6 +80,12 @@
       padding: 2rem;
       border-top: 0.5rem dotted var(--grayish-blue);
 
+      & button {
+        @include respond(phone) {
+          font-size: 3rem;
+        }
+      }
+
       @include respond(phone) {
         padding: 4rem;
       }
