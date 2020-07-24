@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.Icons {
+  margin-left: auto;
+
+  @include respond(phone) {
+    margin-left: 0;
+    margin-top: 10rem;
+  }
+
+  & svg {
+    fill: white;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+
+    @include respond(phone) {
+      height: 6rem;
+      width: 6rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    &:hover {
+      fill: var(--soft-red);
+    }
+  }
+}

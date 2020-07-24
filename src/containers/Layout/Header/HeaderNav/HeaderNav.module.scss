@@ -23,4 +23,17 @@
       display: none;
     }
   }
+
+  &Btn {
+    @include respond(phone) {
+      display: block !important;
+      background-color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 }

@@ -3,9 +3,7 @@ import Logo from '../../../components/Logo/Logo';
 import List from '../../../components/List/List';
 import classes from './Footer.module.scss';
 import Container from '../../Container/Container';
-import Icon from '../../../images/icons.svg';
-
-const icons = ['#icon-facebook2', '#icon-twitter'];
+import Icons from '../../../components/Icons/Icons';
 
 const Footer = () => (
   <footer className={classes.Footer}>
@@ -15,13 +13,7 @@ const Footer = () => (
 
         <List type="light" />
 
-        <div className={classes.FooterIcon}>
-          {icons.map((cur, i) => (
-            <svg key={i}>
-              <use xlinkHref={Icon + cur} />
-            </svg>
-          ))}
-        </div>
+        <Icons />
       </div>
     </Container>
 
