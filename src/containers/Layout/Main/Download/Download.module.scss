@@ -29,6 +29,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 2rem;
+    background-color: white;
 
     @include respond(phone) {
       border-radius: 2rem;
