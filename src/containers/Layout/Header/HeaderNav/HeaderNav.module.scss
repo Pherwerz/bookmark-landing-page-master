@@ -1,3 +1,5 @@
+@import '../../../../variables';
+
 .HeaderNav {
   padding: 4rem 0;
   display: flex;
@@ -10,5 +12,15 @@
 
   & ul {
     margin-right: 2rem;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  & button {
+    @include respond(phone) {
+      display: none;
+    }
   }
 }

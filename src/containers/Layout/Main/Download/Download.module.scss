@@ -1,5 +1,11 @@
+@import '../../../../variables';
+
 .Download {
   margin-bottom: 10rem;
+
+  @include respond(phone) {
+    margin-bottom: 20rem;
+  }
 
   &List {
     width: 90%;
@@ -7,6 +13,11 @@
     display: flex;
     justify-content: center;
     height: 45rem;
+
+    @include respond(phone) {
+      height: auto;
+      flex-flow: column;
+    }
   }
 
   &Item {
@@ -19,22 +30,58 @@
     align-items: center;
     padding-top: 2rem;
 
+    @include respond(phone) {
+      border-radius: 2rem;
+      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+      height: auto;
+      padding-top: 4rem;
+    }
+
     &:not(:last-child) {
       margin-right: 4rem;
+
+      @include respond(phone) {
+        margin-right: 0;
+        margin-bottom: 10rem;
+      }
+    }
+
+    & img {
+      width: 50%;
+      margin-bottom: 2rem;
+
+      @include respond(phone) {
+        width: 35%;
+        margin-bottom: 4rem;
+      }
     }
 
     & h3 {
       color: var(--very-dark-blue);
       font-weight: 500;
+      margin-bottom: 2rem;
+
+      @include respond(phone) {
+        margin-bottom: 4rem;
+      }
     }
 
     & p {
       color: var(--grayish-blue);
+      margin-bottom: 2rem;
+
+      @include respond(phone) {
+        margin-bottom: 4rem;
+      }
     }
 
     & div {
       padding: 2rem;
       border-top: 0.5rem dotted var(--grayish-blue);
+
+      @include respond(phone) {
+        padding: 4rem;
+      }
     }
 
     &:nth-child(2) {
@@ -43,6 +90,10 @@
 
     &:nth-child(3) {
       align-self: flex-end;
+
+      @include respond(phone) {
+        align-self: center;
+      }
     }
   }
 }

@@ -1,16 +1,31 @@
+@import '../../../../variables';
+
 .Contact {
   background-color: var(--soft-blue);
   padding: 10rem 0;
+
+  @include respond(phone) {
+    padding: 20rem 0;
+  }
 
   &Box {
     width: 35%;
     margin: 0 auto;
     color: white;
 
+    @include respond(phone) {
+      width: 90%;
+    }
+
     & p {
       text-align: center;
       margin-bottom: 2rem;
       letter-spacing: 0.3rem;
+
+      @include respond(phone) {
+        margin-bottom: 4rem;
+        letter-spacing: 0.6rem;
+      }
     }
 
     & h2 {
@@ -19,11 +34,20 @@
       font-weight: 500;
       margin-bottom: 4rem;
       padding: 0 1rem;
+
+      @include respond(phone) {
+        font-size: 5rem;
+        margin-bottom: 8rem;
+      }
     }
   }
 
   &Form {
     display: flex;
+
+    @include respond(phone) {
+      flex-flow: column;
+    }
   }
 
   &Input {
@@ -32,6 +56,16 @@
     flex: 1;
     margin-right: 2rem;
     border: none;
+
+    @include respond(phone) {
+      margin-right: 0;
+      margin-bottom: 4rem;
+      padding: 3rem;
+    }
+
+    &::-webkit-input-placeholder {
+      color: var(--grayish-blue);
+    }
 
     &:focus {
       outline: none;

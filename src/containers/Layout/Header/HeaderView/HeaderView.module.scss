@@ -1,15 +1,32 @@
+@import '../../../../variables';
+
 .HeaderView {
   display: flex;
   height: 57rem;
   margin-bottom: 10rem;
 
+  @include respond(phone) {
+    margin-bottom: 20rem;
+    height: auto;
+    flex-flow: column;
+  }
+
   & > * {
     flex: 1;
+
+    @include respond(phone) {
+      flex: none;
+    }
   }
 
   &left {
     display: flex;
     justify-content: flex-end;
+
+    @include respond(phone) {
+      order: 1;
+      justify-content: center;
+    }
   }
 
   &Item {
@@ -17,18 +34,42 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
+    text-align: center;
 
     & h1 {
       font-size: 4rem;
       font-weight: 500;
       color: var(--very-dark-blue);
       margin-bottom: 4rem;
+
+      @include respond(phone) {
+        margin-bottom: 8rem;
+        font-size: 6rem;
+      }
     }
 
     & p {
       width: 90%;
       margin-bottom: 4rem;
       color: var(--grayish-blue);
+
+      @include respond(phone) {
+        margin-bottom: 8rem;
+        width: 100%;
+      }
+    }
+
+    & div {
+      @include respond(phone) {
+        display: flex;
+        justify-content: center;
+      }
+
+      & button {
+        @include respond(phone) {
+          font-size: 2.25rem;
+        }
+      }
     }
 
     & div button:not(:last-child) {
@@ -40,6 +81,15 @@
     display: flex;
     align-items: center;
     position: relative;
+
+    @include respond(phone) {
+      margin: 5rem 0;
+      margin-bottom: 10rem;
+    }
+
+    & img {
+      width: 100%;
+    }
 
     &bg {
       position: absolute;

@@ -1,7 +1,15 @@
+@import '../../variables';
+
 .Logo {
   width: 14.8rem;
   height: 2.5rem;
   margin-right: 4rem;
+
+  @include respond(phone) {
+    margin-right: 0;
+    width: 28rem;
+    height: 5rem;
+  }
 
   &icon {
     width: 100%;

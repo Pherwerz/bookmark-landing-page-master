@@ -1,6 +1,15 @@
+@import '../../variables';
+
 .Tab {
-  height: 45rem;
+  height: 50rem;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(phone) {
+    height: auto;
+  }
 
   &right {
     display: flex;
@@ -32,6 +41,10 @@
     align-items: center;
     justify-content: center;
 
+    @include respond(phone) {
+      flex-flow: column;
+    }
+
     & > * {
       flex: 1;
     }
@@ -41,13 +54,17 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    & img {
+      width: 100%;
+    }
   }
 
   &bg {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 80%;
+    height: 70%;
     width: 43%;
     background-color: var(--soft-blue);
     z-index: -1;

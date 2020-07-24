@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .Button {
   border: none;
   padding: 1rem 3rem;
@@ -7,6 +9,13 @@
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: all 0.2s;
   cursor: pointer;
+
+  @include respond(phone) {
+    font-size: 3.2rem;
+    padding: 2rem 6rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  }
 
   &orange {
     background-color: var(--soft-red);

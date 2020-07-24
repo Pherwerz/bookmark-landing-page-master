@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .List {
   list-style: none;
   display: flex;
@@ -5,7 +7,17 @@
   align-items: center;
   flex: 0 0 25%;
 
+  @include respond(phone) {
+    flex-flow: column;
+    margin-top: 10rem;
+  }
+
   &Item {
+    &:not(:last-child) {
+      @include respond(phone) {
+        margin-bottom: 5rem;
+      }
+    }
   }
 
   &Link {
@@ -16,6 +28,12 @@
       font-weight: 400;
       font-size: 1.6rem;
       letter-spacing: 0.2rem;
+      text-transform: uppercase;
+
+      @include respond(phone) {
+        font-size: 3.2rem;
+        letter-spacing: 0.4rem;
+      }
     }
 
     &dark:link,
@@ -25,7 +43,7 @@
 
     &light:link,
     &light:visited {
-      color: #ffffff;
+      color: #f6f6f6;
     }
   }
 

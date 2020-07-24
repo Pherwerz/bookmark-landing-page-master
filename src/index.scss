@@ -1,3 +1,5 @@
+@import './variables';
+
 :root {
   --grayish-blue: hsl(229, 8%, 60%);
   --very-dark-blue: hsl(229, 31%, 21%);
@@ -8,6 +10,10 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include respond(phone) {
+    font-size: 30%;
+  }
 }
 
 *,
@@ -29,6 +35,10 @@ body {
   font-weight: 400;
   line-height: 1.5;
   -webkit-tap-highlight-color: transparent;
+
+  @include respond(phone) {
+    font-size: 3.6rem;
+  }
 }
 
 code {

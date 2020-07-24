@@ -1,3 +1,5 @@
+@import '../../../../variables';
+
 .Feature {
   margin-bottom: 15rem;
 
@@ -6,6 +8,12 @@
     margin: 0 auto;
     width: 65%;
     margin-bottom: 5rem;
+
+    @include respond(phone) {
+      flex-flow: column;
+      width: 100%;
+      margin-bottom: 15rem;
+    }
   }
 
   &Btn {
@@ -20,6 +28,11 @@
     color: var(--grayish-blue);
     cursor: pointer;
 
+    @include respond(phone) {
+      padding: 4rem;
+      border-bottom: 2px solid var(--grayish-blue);
+    }
+
     &:hover {
       color: var(--soft-red);
     }
@@ -27,6 +40,10 @@
     &.active {
       border-bottom: 2px solid var(--soft-red);
       color: var(--very-dark-blue);
+
+      @include respond(phone) {
+        border-bottom: 4px solid var(--soft-red);
+      }
     }
 
     &:focus {
