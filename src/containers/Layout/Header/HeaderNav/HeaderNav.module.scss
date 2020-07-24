@@ -25,6 +25,8 @@
   }
 
   &Btn {
+    display: none !important;
+
     @include respond(phone) {
       display: block !important;
       background-color: white;
